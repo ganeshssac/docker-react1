@@ -7,6 +7,6 @@ before_install:
   - docker build -t ganesh/docker-react1 -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true ganesh/docker-react1 npm run test
+  - docker run -e CI=true ganesh/docker-react1 npm run test -- --coverage
 
 
